@@ -33,17 +33,19 @@
         header {
             display: flex;
             align-items: center;
-            gap: 20px;
+            justify-content: space-between;
             margin-bottom: 20px;
+        }
+
+        header .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         header h1 {
             font-size: 2.5em;
             color: #2c3e50;
-        }
-
-        header .social-links {
-            margin-top: 10px;
         }
 
         header img {
@@ -116,6 +118,11 @@
             section h2 {
                 font-size: 1.5em;
             }
+
+            header .social-links a img {
+                width: 28px;
+                height: 28px;
+            }
         }
     </style>
 </head>
@@ -124,14 +131,14 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <img src="Alan's BOOGLE.jpg" alt="0xAlan Headshot">
-            <div>
+            <div class="profile-info">
+                <img src="Alan's BOOGLE.jpg" alt="0xAlan Headshot">
                 <h1>0xAlan</h1>
-                <div class="social-links">
-                    <a href="https://x.com/0xAlan_" target="_blank" rel="noopener noreferrer">
-                        <img src="X_logo.jpg" alt="X Profile">
-                    </a>
-                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/0xAlan_" target="_blank" rel="noopener noreferrer">
+                    <img src="X_logo.jpg" alt="X Profile">
+                </a>
             </div>
         </header>
 
@@ -152,8 +159,8 @@
             <h2>Built</h2>
             <ul>
                 <li><strong><a href="https://www.pathcrypto.com" target="_blank" rel="noopener noreferrer">Path</a></strong>: SEC registered RIA, robo-advisor for digital assets</li>
-                <li><strong><a href="https://www.alertatron.com" target="_blank" rel="noopener noreferrer">Alertatron</a></strong>: Derivative trade automation made easy</li>
                 <li><strong><a href="https://www.deficarrot.com" target="_blank" rel="noopener noreferrer">Carrot</a></strong>: Liquid yield-bearing token - yield you can hold in your wallet on Solana</li>
+                <li><strong><a href="https://www.alertatron.com" target="_blank" rel="noopener noreferrer">Alertatron</a></strong>: Derivative trade automation made easy</li>
             </ul>
         </section>
 
